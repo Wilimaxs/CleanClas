@@ -1,0 +1,109 @@
+/* garis pemisah tiap list laporan */
+#content main .table-laporan .laporan table tbody tr {
+    border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
+    text-align: center;
+}
+
+/* posisi align konten table */
+#content main .table-laporan .laporan table tbody tr td p,
+#content main .table-laporan .laporan table thead tr th {
+    text-align: center;
+}
+
+/* table laporan luar */
+#content main .table-laporan {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+    margin-top: 24px;
+    width: 100%;
+    color: var(--dark);
+}
+
+#content main .table-laporan > div {
+    border-radius: 20px;
+    background: var(--light);
+    padding: 24px;
+    overflow-x: auto;
+}
+
+/* table laporan header */
+#content main .table-laporan .head {
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    margin-bottom: 24px;
+}
+
+#content main .table-laporan .head h3 {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* laporan */
+#content main .table-laporan .laporan {
+    flex-grow: 1;
+    flex-basis: 500px;
+    margin-bottom: 50px;
+}
+
+/* tabel laporan */
+#content main .table-laporan .laporan table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* tabel head laporan */
+#content main .table-laporan .laporan table th {
+    padding-bottom: 12px;
+    font-size: 25px;
+    border-bottom: 1px solid var(--grey);
+}
+
+/* tabel isi laporan */
+#content main .table-laporan .laporan table td {
+    padding: 16px 0;
+}
+
+#content main .table-laporan .laporan table tbody tr:hover {
+    background: var(--grey);
+}
+
+/* siswa - warna status piket/tidak */
+#content main .table-laporan .laporan table tr td .status {
+    font-size: 13px;
+    padding: 6px 16px;
+    color: var(--light);
+    border-radius: 20px;
+    font-weight: 700;
+}
+#content main .table-laporan .laporan table tr td .status.piket {
+    background: var(--blue);
+}
+
+#content main .table-laporan .laporan table tr td .status.tidak.piket {
+    background: var(--orange);
+}
+
+/* guru - warna background pada point siswa */
+#content main .table-laporan .btn-laporan {
+    padding: 5px 20px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+    #content main .table-laporan .head {
+        min-width: 420px;
+    }
+    #content main .table-laporan .laporan table {
+        min-width: 420px;
+    }
+}
