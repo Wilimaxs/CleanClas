@@ -151,7 +151,7 @@ php artisan test --filter ScheduleTest
 ## 📧 Support
 
 -   Email: wildan27370@gmail.com
--   Issues: [GitHub Issues](https://github.com/yourusername/cleanclass/issues)
+-   Issues: [GitHub Issues](https://github.com/Wilimaxs/cleanclass/issues)
 
 ---
 
